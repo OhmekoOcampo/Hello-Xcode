@@ -18,12 +18,28 @@ struct ContentView: View { //View is a protocol, you need some certain things fo
             )
                 .ignoresSafeArea()
             VStack{ //You have Vstacks, HStack, ZStack
-                Image(systemName:"person.fill") //Image is a view
+                Image(systemName:"figure.skateboarding") //Image is a view
                     .imageScale(.large)
-                    .foregroundStyle(.yellow)
-                Text("Hello, Xcode!") //Text is a view
+                Text("Welcome to iOS Development!") //Text is a view
                     .font(Font.largeTitle)
+                    .fontWeight(.semibold)
+                    .multilineTextAlignment(.center)
+                
+                Text("First App")
+                    .font(.title)
                     .fontWeight(.thin)
+                    .padding()
+                    .background(Color.blue.opacity(0.8))
+                Text("I Love to Code!")
+                Text("Please feel free to ask questions send me an email at ohmeko.ocampo@gmail.com")
+                    .bold()
+                    .padding()
+                    .font(.title2)
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(.purple)
+                Image(.IMG_3164)
+                    .resizable()
+                    .frame(width: 200, height: 150)
             }
             .padding()
         }
